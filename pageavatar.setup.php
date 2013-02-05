@@ -4,8 +4,8 @@
 Code=pageavatar
 Name=Page Avatar
 Description=Page Avatar plugin enables you to upload, replace and delete images for a specific page bypassing PFS
-Version=4.02
-Date=24-apr-2011
+Version=4.03
+Date=2013-02-05
 Author=esclkm, Seditio.by
 Copyright=&copy; esclkm
 Notes=
