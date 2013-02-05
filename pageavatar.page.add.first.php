@@ -29,10 +29,10 @@ $pageavatar = (isset($_FILES['pageavatar']) && ($_FILES['pageavatar']['error'] =
 
 if (!empty($pageavatar["name"]))
 {
-	$file_ext = mb_strtolower(end(explode(".", $pageavatar["name"])));
+	$pa_file_ext = mb_strtolower(pathinfo($pageavatar["name"], PATHINFO_EXTENSION));
 	if ($pageavatar['error'] == UPLOAD_ERR_OK)
 	{
-		if (!in_array($file_ext, $paset['ext']))
+		if (!in_array($pa_file_ext, $paset['ext']))
 		{
 			cot_error($L['upload']['NAF']);
 		}
